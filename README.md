@@ -6,8 +6,29 @@ Simple text encryption application written in C as part of the [![CS50 Badge](ht
 Table of content
 ----
 * [General info](#general-info)
+* [Setup](#setup)
 * [Technologies](#technologies)
 
 ### General info
 
-Text encrypting algorithm 
+Text encrypting program written in C. The aim of the application is to encrypt texts using a numeric key enterd by the user. The output is the encrypted cipher text which can only be decryted if the receiver of the messages knows the key used for encrptytion. The algorithm using the ASCII character encoding and differentiates between lower case and upper case letters.
+
+
+### Setup
+
+The application can be ran locally or using the [![CS50 Badge](https://img.shields.io/badge/-CS50-red)](https://cs50.harvard.edu) <a href="https://ide.cs50.io">IDE</a> after logging in with your GitHub account.
+
+To run the program:
+ 1. It needs to be complied: `$ make ceasar.c`
+ 2. Started with the selected key as an argument: `$ ./ceasar key`
+ 3. Enter the text you would like to encrypt: `plaintext: "example"`
+ 
+ ### Technologies
+ 
+ Libraries:
+ * stdio.h
+ * cs50.h
+ * string.h
+ * ctype.h
+ * stdlib.h
+ * <img alt="C" src="https://img.shields.io/badge/c%20-%2300599C.svg?&style=for-the-badge&logo=c&logoColor=white"/>
